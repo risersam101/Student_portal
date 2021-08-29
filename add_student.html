@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add student</title>
+    <style>
+      h2 {
+            font-size: 30px;
+            text-align: center;
+            color: #000;
+        }
+
+        .container{
+          
+            margin-left: 36%;
+            margin-right: 30%;
+            padding: 10px 50px;
+            box-sizing: border-box;
+        
+        }
+    </style>
+</head>
+<body>
+    <h2>ADD STUDENT DETAILS</h2><br><br>
+    <div class="container">
+        <form action="/addstudent" method="POST" onsubmit="alert('Student Details Added!')">
+            <label for="studentid"><b>STUDENT ID</b></label><br>
+            <input type="text" name="studentid" placeholder="STUDENT ID" required style="width: 250px;"><br><br>
+
+            <label for="studentname"><b>STUDENT NAME</b></label><br>
+            <input type="text" name="studentname" placeholder="STUDENT NAME" required style="width: 250px;"><br><br>
+
+            <label for="gender"><b>GENDER</b></label>
+            <div class="gender">
+                <div>
+                    <input type="radio" name="gender" value="Male" id="male">
+                    <label for="male"><b>MALE</b></label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" value="Female" id="female">
+                    <label for="female"><b>Female</b></label>
+                </div>
+            </div><br>
+
+            <label for="dateofbirth"><b>DATE OF BIRTH</b></label><br>
+            <input type="date" name="dateofbirth" id="dateofbirth" style="width: 250px;"><br><br>
+
+            <label for="city"><b>CITY</b></label><br>
+            <input type="text" placeholder="CITY" name="city" required style="width: 250px;"><br><br>
+
+            <label for="state"><b>STATE</b></label><br>
+            <input type="text" placeholder="STATE" name="state" required style="width: 250px;"><br><br>
+
+            <label for="email"><b>EMAIL</b></label><br>
+            <input type="email" placeholder="EMAIL" name="email" required style="width: 250px;"><br><br>
+
+            <label for="qualification"><b>QUALIFICATION</b></label><br>
+            <input type="text" placeholder="QUALIFICATION" name="qualification" required style="width: 250px;"><br><br>
+
+            <label for="stream"><b>STREAM</b></label><br>
+            <input type="text" placeholder="STREAM" name="stream" required style="width: 250px;"><br><br>
+
+            <button type="submit" name="submit">Submit </button>
+        </form>
+    </div>
+    </body>
+</html>
